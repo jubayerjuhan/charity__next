@@ -9,13 +9,13 @@ const VideoCard = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <section className="video-card">
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         autoplay
         isOpen={isOpen}
         videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
-      />
+      /> */}
       <div
         className="video-card__bg"
         style={{ backgroundImage: `url(${bgImage})` }}

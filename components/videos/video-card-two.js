@@ -8,13 +8,13 @@ const VideoCardTwo = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <section className="video-card-two">
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         autoplay
         isOpen={isOpen}
         videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
-      />
+      /> */}
       <Container>
         <div
           className="inner-container"

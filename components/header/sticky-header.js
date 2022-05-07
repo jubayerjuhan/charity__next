@@ -7,24 +7,23 @@ import logoLight from "../../assets/images/logo-light.png";
 const StickyHeader = ({ extraClassName }) => {
   const [sticky, setSticky] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 130) {
-      setSticky(true);
-    } else if (window.scrollY < 130) {
-      setSticky(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
+  // const handleScroll = () => {
+  //   if (window.scrollY > 130) {
+  //     setSticky(true);
+  //   } else if (window.scrollY < 130) {
+  //     setSticky(false);
+  //   }
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // });
   return (
     <div
-      className={`stricky-header stricked-menu ${extraClassName} ${
-        sticky === true ? "stricky-fixed" : " "
-      }`}
+      className={`stricky-header stricked-menu ${extraClassName} ${sticky === true ? "stricky-fixed" : " "
+        }`}
     >
       <div className="container">
         <div className="logo-box">
